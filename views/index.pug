@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p This application convert a CSV file with CEPs to a CSV file with Latitude and Longitude
+  form(method='POST' action='/upload' enctype="multipart/form-data")
+    div.form.group
+      label(for='file') File:
+      input#file.form-control(type='file', name='ceps')
+    button.btn.btn-primary(type='submit') Upload
