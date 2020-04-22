@@ -4,7 +4,7 @@ const readline = require('readline');
 const fs = require('fs');
 const GoogleMapsAPI = require('googlemaps');
 const publicConfig = {
-    key: 'AIzaSyBUNcEMTbePCBeHsGkKiO5S-ypZ_xhOuF4',
+    key: process.env.GOOGLE_API_KEY,
     stagger_time:       1000,
     encode_polylines:   false,
     secure:             true
